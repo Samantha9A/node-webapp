@@ -1,6 +1,10 @@
     pipeline {
         agent any
 
+        environment {
+        DOCKER_IMAGE = 'sidharthsingh7/ss_backend'
+        DOCKER_TAG = "0.0.1.RELEASE"
+        }
         stages {
             stage('Checkout Code') {
                 steps {
