@@ -11,7 +11,7 @@
             }
             stage('Build') {
                 steps {
-                    bat echo "Building the app"'
+                    bat 'echo "Building the app"'
                 }
             }
             stage('Test') {
