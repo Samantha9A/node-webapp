@@ -6,7 +6,7 @@
                 steps {
                     git branch: 'main'
                         credentialsId: 'ded5b590-2f40-410e-ad62-019f62f34202'
-                        url: 'git@github.com:Samantha9A/node-webapp.git'
+                        url: 'https://github.com/Samantha9A/node-webapp'
                 }
             }
             stage('Build') {
