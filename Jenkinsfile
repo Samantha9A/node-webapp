@@ -13,17 +13,17 @@
             }
             stage('Build') {
                 steps {
-                    bat 'echo "Building the app"'
+                    sh 'echo "Building the app"'
                 }
             }
             stage('Test') {
                 steps {
-                    bat 'echo "Running tests"'
+                    sh 'echo "Running tests"'
                 }
             }
             stage('Deploy') {
                 steps {
-                    bat 'echo "Deployment logic goes here"'
+                    sh 'echo "Deployment logic goes here"'
                 }
             }
         }
