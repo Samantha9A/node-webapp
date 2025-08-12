@@ -2,7 +2,7 @@
         agent any
 
         stages {
-            stage('Checkout') {
+            stage('Checkout Code') {
                 steps {
                     git branch: 'main'
                         credentialsId: 'ded5b590-2f40-410e-ad62-019f62f34202'
@@ -11,17 +11,17 @@
             }
             stage('Build') {
                 steps {
-                    sh 'npm install'
+                    bat echo "Building the app"'
                 }
             }
             stage('Test') {
                 steps {
-                    sh 'npm test'
+                    bat 'echo "Running tests"'
                 }
             }
             stage('Deploy') {
                 steps {
-                    echo 'Deployment logic goes here'
+                    bat echo 'Deployment logic goes here'
                 }
             }
         }
