@@ -5,7 +5,6 @@
             stage('Checkout Code') {
                 steps {
                     git branch: 'main'
-                        credentialsId: 'ded5b590-2f40-410e-ad62-019f62f34202'
                         url: 'https://github.com/Samantha9A/node-webapp'
                 }
             }
@@ -21,7 +20,7 @@
             }
             stage('Deploy') {
                 steps {
-                    bat echo 'Deployment logic goes here'
+                    bat 'echo "Deployment logic goes here"'
                 }
             }
         }
