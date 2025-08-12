@@ -4,8 +4,7 @@
         stages {
             stage('Checkout Code') {
                 steps {
-                    git branch: 'main'
-                        url: 'https://github.com/Samantha9A/node-webapp'
+                    git 'https://github.com/Samantha9A/node-webapp'
                 }
             }
             stage('Build') {
